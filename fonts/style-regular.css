@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'MullerRegular';
+    src: local('Muller Regular'), local('Muller-Regular'),
+        url('MullerRegular.woff2') format('woff2'),
+        url('MullerRegular.woff') format('woff'),
+        url('MullerRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
