@@ -13,19 +13,19 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="images/logotype.png" alt="logotype">
+                <img src="images/logotype.svg" alt="logotype">
             </div>
 
             <h1>
                 Ремонт квартир в типовых домах
             </h1>
 
-            <h4>Готовый дизайн-проект, работы и материалы за 3 месяца от 610 т.р.</h4>
-            
+            <div class="disign">Готовый дизайн-проект, работы и материалы за 3 месяца от 610 т.р.</div>
+        
             <div class="btn-complect">
-                <a href="#first-client">
+                <form action="#first-client">
                     <button class="btn">Узнайте о запуске первым</button> 
-                </a>
+                </form>
                 <span>Старт весной 2016</span>
             </div>
 
@@ -38,7 +38,7 @@
         <div class="video-page">
             <div id="contacts">
                 <img src="images/Shape.svg" alt="phone">
-                <a href="#contacts_footer"><span>Контакты</span></a>
+                <a href="#contacts_footer">Контакты</a>
             </div>
             <div class="btn-container">
                 <button id = "btnPlay">
@@ -56,21 +56,21 @@
 
             <div class="blocks">
                 <div class="block-advantage">
-                    <h4>Опытная команда</h4>
+                    <div class="disign">Опытная команда</div>
                     <span>Команда проектировщиков и строителей со стажем работы более 6 лет</span>
                 </div>
                 <div class="block-advantage">
-                    <h4>Типовые дизайн-проекты</h4>
+                    <div class="disign">Типовые дизайн-проекты</div>
                     <span>Три стиля чистовой отделки «под ключ» и спектр дополнительных услуг</span>
                 </div>
             </div>
             <div class="blocks">
                 <div class="block-advantage">
-                    <h4>Фиксированная смета</h4>
+                    <div class="disign">Фиксированная смета</div>
                     <span>Никаких дополнительных расходов во время ремонта. Расчет стоимости при заключении договора</span>
                 </div>
                 <div class="block-advantage border-block">
-                    <h4>Срок работ</h4>
+                    <div class="disign">Срок работ</div>
                     <span>3 месяца</span>
                 </div>
             </div>
@@ -102,7 +102,7 @@
             <img id="image-slider3" src="images/3.png" alt="photo3">
         </div>
 
-        <div id="first-client">
+        <section id="first-client">
             <h2>Узнайте о запуске сервиса первым</h2>
             <div class="action">
                 <img src="images/door.svg" alt="door">
@@ -111,11 +111,11 @@
             <form class="form_registarion" action="" method="post">
                 <div class="user_data">
                     <div class="input_position user_name" data-validate="Имя и фамилия*">
-                        <input class="this_input" type="text" required="required">
+                        <input class="this_input" type="text" required="required" required aria-required=”true” pattern="[A-Za-z-0-9]+s[A-Za-z-'0-9]+">
                         <div class="focus_input" data-placeholder="Имя и фамилия*"></div>
                     </div>
                     <div class="input_position user_mail" data-validate="Valid email is: a@b.c">
-                        <input class="this_input" type="text" name="email" required="required">
+                        <input class="this_input" **type="email"**  name="email" required="required">
                         <div class="focus_input" data-placeholder="Е-mail адрес*"></div>
                     </div>
                     <div class="input_position user_phone">
@@ -134,29 +134,27 @@
                 <img src="images/send.svg" alt="send">
                 <span>Спасибо! Мы будем держать вас в курсе обновлений</span>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <ul class="social-icons">
-            <li><a href="#"><img src='images/facebook.svg' target="_blank" rel="noopener" alt="facebook"/></a></li>
-            <li><a href="#"><img src='images/vk.svg' target="_blank" rel="noopener" alt="vk"/></a></li>
-            <li><a href="#"><img src='images/instagram.svg' target="_blank" rel="noopener" alt="instagram"/></a></li>
+            <li><a href="#" target="_blank" rel="noopener"><img src='images/facebook.svg' alt="facebook"/></a></li>
+            <li><a href="#" target="_blank" rel="noopener"><img src='images/vk.svg' alt="vk"/></a></li>
+            <li><a href="#" target="_blank" rel="noopener"><img src='images/instagram.svg' alt="instagram"/></a></li>
         </ul>
         <span>Следите за нашим развитием</span>
         <span class="subscription">Подпишитесь на наши аккаунты в соц. сетях, знакомьтесь с нашими проектами и тем, что нас вдохновляет</span>
         <section id="contacts_footer">
             <div class="phone-group">
-                <img src="images/phone.svg" alt="phone">
-                <span>+7 (812) 903-54-45</span>
+                <a href="#"><img src="images/phone.svg" alt="phone">+7 (812) 903-54-45</a>
             </div>
             <div class="adress-group">
                 <span>Ул. Галерная, д 55,</span>
                 <span class="city">Санкт-Петербург</span>
             </div>
             <div class="mail-group">
-                <img src="images/email.svg" alt="email">
-                <span>9035445@gmail.com</span>
+                <a href="#"><img src="images/email.svg" alt="email">9035445@gmail.com</a>
             </div>
         </section>
         <div class="trade-mark">

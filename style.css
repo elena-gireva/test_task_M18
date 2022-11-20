@@ -1,3 +1,7 @@
+body { 
+    max-width: 1880px;
+}
+
 header {
     width: 1880px;
     height: 960px;
@@ -24,7 +28,7 @@ h1 {
     margin-bottom: 0;
 }
 
-h4 {
+.disign {
     font-family: 'MullerRegular';
     font-size: 21px;
     line-height: 30px;
@@ -56,6 +60,7 @@ h4 {
     border: none;
     border-radius: 50px;
     box-shadow: 0px 7px 15px rgba(249, 87, 46, 0.6);
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -70,6 +75,7 @@ h4 {
     font-size: 16px;
     line-height: 18px;
     color: #F9572E;
+    cursor: pointer;
 }
 
 .arrows {
@@ -101,6 +107,7 @@ h4 {
     margin-top: 39px;
     display: flex;
     justify-content: baseline;
+    cursor: pointer;
 }
 #contacts img {
     width: 24px;
@@ -114,7 +121,7 @@ h4 {
     color: #000;
 }
 
-#contacts:hover span {
+#contacts:hover a {
     color: #F9572E;
 }
 
@@ -129,12 +136,12 @@ h4 {
     font-size: 21px;
     line-height: 30px;
     color: #F9572E;
-
+    cursor: pointer;
 }
 
 #btnPlay {
-    width: 250px;
-    height: 250px;
+    width: 255px;
+    height: 254px;
     border: none;
     border-radius: 50%;
     background-color: transparent;
@@ -164,6 +171,7 @@ main {
     justify-self: flex-start;
 }
 .advantages span {
+    font-family: 'MullerMedium';
     text-transform: uppercase;
     color: #33B5A3;
     font-size: 16px;
@@ -184,7 +192,7 @@ main {
     width: 24vw;
 }
 
-.block-advantage h4 {
+.block-advantage div {
     font-family: 'MullerMedium';
     font-size: 24px;
     line-height: 32px;
@@ -211,7 +219,7 @@ main {
     margin-bottom: 181px;
 }
 
-.border-block h4{
+.border-block div{
     text-align: center;
 }
 
@@ -225,6 +233,7 @@ main {
 }
 
 #sliders-container {
+    max-width:100%;
     margin-top: 52px;
     display: flex;
 }
@@ -253,6 +262,7 @@ main {
     display: flex;
     flex-direction: column;
     margin-left: 17px;
+    cursor: pointer;
 }
 
 #caption {
@@ -278,6 +288,7 @@ main {
     border-radius: 50%;
     background-color: transparent;
     padding: 0;
+    cursor: pointer;
 }
 
 .btn-back:hover img,
@@ -511,10 +522,10 @@ footer span {
     letter-spacing: -0.1px;
 }
 
-.mail-group span {
+/* .mail-group span {
     border-bottom: 1px solid #F9572E;
     padding-bottom: 1px;
-}
+} */
 
 .phone-group img{
     width: 24px;
@@ -522,6 +533,16 @@ footer span {
     margin-right: 8px;
 }
 
+.phone-group a,
+.mail-group a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.mail-group a {
+    text-decoration: underline;
+    text-decoration-color: #F9572E;
+}
 .adress-group {
     display: flex;
     flex-direction: column;

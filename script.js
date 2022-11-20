@@ -38,7 +38,7 @@ arrows_comlect.addEventListener("mouseout", () => {
 arrows_comlect.addEventListener("click", () => {
     const height = window.innerHeight;
     window.scrollTo({
-        top: 4300,
+        top: 1000,
         behavior: "smooth",
     })
 })
